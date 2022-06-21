@@ -41,5 +41,9 @@ module.exports = {
     solc: {
       version: "^0.8.0"
     }
+  }, 
+  mocha: {
+      enableTimeouts: false,
+      before_timeout: 2400000 // Here is 40min but can be whatever timeout is suitable for you.
   }
 };

@@ -50,6 +50,9 @@ contract ("TokenSale Test", async (accounts) => {
          */
 
         console.log("deployerAccount "+deployerAccount);
+        console.log("recipient "+recipient);
+        console.log("anotherAccount "+anotherAccount);
+
         //não funcionou sem o await, tive que inserir por conta
         await expect(tokenSaleInstance.sendTransaction({from: deployerAccount, value: web3.utils.toWei("1", "wei")})).to.be.fulfilled;
        
