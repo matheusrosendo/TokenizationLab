@@ -4224,10 +4224,30 @@
   },
   "networks": {
     "3": {
-      "events": {},
+      "events": {
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0xD37c8B6E5C76CD48393D6AE03c5aA468BD104dA4",
-      "transactionHash": "0x7274c2caade24dfdcbb16f93f1eb5f7a2d5230d74127dec8c07b76de4a6d3ff4"
+      "address": "0x7D29396840D4c1CCD4a6D9379e02B2046ff8B085",
+      "transactionHash": "0x40f9f3663e884d9c8eb8a4c6ba31959bfa60412e6bf9e21baf97afa008ce7ce5"
     },
     "1337": {
       "events": {
@@ -4263,7 +4283,7 @@
     }
   },
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-06-21T11:59:23.960Z",
+  "updatedAt": "2022-06-21T13:08:11.008Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
