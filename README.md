@@ -7,7 +7,7 @@ Description: A Token creation and sale dapp with mintable tokens (unfixed supply
 Requirements: Truffle, react, node, ganache, infura, dotenv
 
 Create an .env file with the following variables:
-INITIAL_TOKENS=1000000000
+INITIAL_TOKENS=1000000000 (used only by fixed_supply version)
 RATE_TO_WEI=1
 MNEMONIC=your mnemonic phrase
 INFURA_ROPSTEN_URL=your infura ropsten url
