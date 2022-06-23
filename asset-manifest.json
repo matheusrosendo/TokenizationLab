@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/TokenizationLabFixedSupply/static/css/main.072a7f6a.chunk.css",
-    "main.js": "/TokenizationLabFixedSupply/static/js/main.d5eb067d.chunk.js",
-    "main.js.map": "/TokenizationLabFixedSupply/static/js/main.d5eb067d.chunk.js.map",
+    "main.css": "/TokenizationLabFixedSupply/static/css/main.ab05ae76.chunk.css",
+    "main.js": "/TokenizationLabFixedSupply/static/js/main.2faf8c6f.chunk.js",
+    "main.js.map": "/TokenizationLabFixedSupply/static/js/main.2faf8c6f.chunk.js.map",
     "runtime-main.js": "/TokenizationLabFixedSupply/static/js/runtime-main.4055a7dd.js",
     "runtime-main.js.map": "/TokenizationLabFixedSupply/static/js/runtime-main.4055a7dd.js.map",
-    "static/js/2.da812938.chunk.js": "/TokenizationLabFixedSupply/static/js/2.da812938.chunk.js",
-    "static/js/2.da812938.chunk.js.map": "/TokenizationLabFixedSupply/static/js/2.da812938.chunk.js.map",
+    "static/js/2.02dd1004.chunk.js": "/TokenizationLabFixedSupply/static/js/2.02dd1004.chunk.js",
+    "static/js/2.02dd1004.chunk.js.map": "/TokenizationLabFixedSupply/static/js/2.02dd1004.chunk.js.map",
     "index.html": "/TokenizationLabFixedSupply/index.html",
-    "precache-manifest.16c2d548e2b837ae43065cf969cc5d2d.js": "/TokenizationLabFixedSupply/precache-manifest.16c2d548e2b837ae43065cf969cc5d2d.js",
+    "precache-manifest.b63fddaa624b8a61af3fedda7886cb0b.js": "/TokenizationLabFixedSupply/precache-manifest.b63fddaa624b8a61af3fedda7886cb0b.js",
     "service-worker.js": "/TokenizationLabFixedSupply/service-worker.js",
-    "static/css/main.072a7f6a.chunk.css.map": "/TokenizationLabFixedSupply/static/css/main.072a7f6a.chunk.css.map"
+    "static/css/main.ab05ae76.chunk.css.map": "/TokenizationLabFixedSupply/static/css/main.ab05ae76.chunk.css.map",
+    "static/media/loading.gif": "/TokenizationLabFixedSupply/static/media/loading.0f8c7134.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.4055a7dd.js",
-    "static/js/2.da812938.chunk.js",
-    "static/css/main.072a7f6a.chunk.css",
-    "static/js/main.d5eb067d.chunk.js"
+    "static/js/2.02dd1004.chunk.js",
+    "static/css/main.ab05ae76.chunk.css",
+    "static/js/main.2faf8c6f.chunk.js"
   ]
 }
