@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/TokenizationLab/static/css/main.a4c22813.chunk.css",
-    "main.js": "/TokenizationLab/static/js/main.6da2ca76.chunk.js",
-    "main.js.map": "/TokenizationLab/static/js/main.6da2ca76.chunk.js.map",
+    "main.css": "/TokenizationLab/static/css/main.072a7f6a.chunk.css",
+    "main.js": "/TokenizationLab/static/js/main.e64377f0.chunk.js",
+    "main.js.map": "/TokenizationLab/static/js/main.e64377f0.chunk.js.map",
     "runtime-main.js": "/TokenizationLab/static/js/runtime-main.e66225b0.js",
     "runtime-main.js.map": "/TokenizationLab/static/js/runtime-main.e66225b0.js.map",
-    "static/js/2.e6efe4b4.chunk.js": "/TokenizationLab/static/js/2.e6efe4b4.chunk.js",
-    "static/js/2.e6efe4b4.chunk.js.map": "/TokenizationLab/static/js/2.e6efe4b4.chunk.js.map",
+    "static/js/2.6f66659a.chunk.js": "/TokenizationLab/static/js/2.6f66659a.chunk.js",
+    "static/js/2.6f66659a.chunk.js.map": "/TokenizationLab/static/js/2.6f66659a.chunk.js.map",
     "index.html": "/TokenizationLab/index.html",
-    "precache-manifest.c7e18e6a20379ce0e93f59b8e0b4ef61.js": "/TokenizationLab/precache-manifest.c7e18e6a20379ce0e93f59b8e0b4ef61.js",
+    "precache-manifest.98ce20cb0e06b6ec17245692b83aa72d.js": "/TokenizationLab/precache-manifest.98ce20cb0e06b6ec17245692b83aa72d.js",
     "service-worker.js": "/TokenizationLab/service-worker.js",
-    "static/css/main.a4c22813.chunk.css.map": "/TokenizationLab/static/css/main.a4c22813.chunk.css.map"
+    "static/css/main.072a7f6a.chunk.css.map": "/TokenizationLab/static/css/main.072a7f6a.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.e66225b0.js",
-    "static/js/2.e6efe4b4.chunk.js",
-    "static/css/main.a4c22813.chunk.css",
-    "static/js/main.6da2ca76.chunk.js"
+    "static/js/2.6f66659a.chunk.js",
+    "static/css/main.072a7f6a.chunk.css",
+    "static/js/main.e64377f0.chunk.js"
   ]
 }
