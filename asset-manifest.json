@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/TokenizationLabFixedSupply/static/css/main.ab05ae76.chunk.css",
-    "main.js": "/TokenizationLabFixedSupply/static/js/main.7ef26b7d.chunk.js",
-    "main.js.map": "/TokenizationLabFixedSupply/static/js/main.7ef26b7d.chunk.js.map",
+    "main.js": "/TokenizationLabFixedSupply/static/js/main.55d5f503.chunk.js",
+    "main.js.map": "/TokenizationLabFixedSupply/static/js/main.55d5f503.chunk.js.map",
     "runtime-main.js": "/TokenizationLabFixedSupply/static/js/runtime-main.4055a7dd.js",
     "runtime-main.js.map": "/TokenizationLabFixedSupply/static/js/runtime-main.4055a7dd.js.map",
     "static/js/2.2b2eb979.chunk.js": "/TokenizationLabFixedSupply/static/js/2.2b2eb979.chunk.js",
     "static/js/2.2b2eb979.chunk.js.map": "/TokenizationLabFixedSupply/static/js/2.2b2eb979.chunk.js.map",
     "index.html": "/TokenizationLabFixedSupply/index.html",
-    "precache-manifest.9f795372ba0df90c32fcbdff600e8acb.js": "/TokenizationLabFixedSupply/precache-manifest.9f795372ba0df90c32fcbdff600e8acb.js",
+    "precache-manifest.c53626d3e62800304e25e243846ebab8.js": "/TokenizationLabFixedSupply/precache-manifest.c53626d3e62800304e25e243846ebab8.js",
     "service-worker.js": "/TokenizationLabFixedSupply/service-worker.js",
     "static/css/main.ab05ae76.chunk.css.map": "/TokenizationLabFixedSupply/static/css/main.ab05ae76.chunk.css.map",
     "static/media/loading.gif": "/TokenizationLabFixedSupply/static/media/loading.0f8c7134.gif"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.4055a7dd.js",
     "static/js/2.2b2eb979.chunk.js",
     "static/css/main.ab05ae76.chunk.css",
-    "static/js/main.7ef26b7d.chunk.js"
+    "static/js/main.55d5f503.chunk.js"
   ]
 }

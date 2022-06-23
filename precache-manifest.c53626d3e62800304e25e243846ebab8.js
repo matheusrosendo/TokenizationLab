@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "576ead56f77f78ec91d746784390a653",
+    "revision": "cc29e9ad7c3637d51c9067f3b075068d",
     "url": "/TokenizationLabFixedSupply/index.html"
   },
   {
-    "revision": "3088feb61d9421ee8cfb",
+    "revision": "fff44a0030cade1c3789",
     "url": "/TokenizationLabFixedSupply/static/css/main.ab05ae76.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TokenizationLabFixedSupply/static/js/2.2b2eb979.chunk.js"
   },
   {
-    "revision": "3088feb61d9421ee8cfb",
-    "url": "/TokenizationLabFixedSupply/static/js/main.7ef26b7d.chunk.js"
+    "revision": "fff44a0030cade1c3789",
+    "url": "/TokenizationLabFixedSupply/static/js/main.55d5f503.chunk.js"
   },
   {
     "revision": "316bc5db85c6e6df351f",

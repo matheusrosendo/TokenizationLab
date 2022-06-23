@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/TokenizationLabFixedSupply/precache-manifest.9f795372ba0df90c32fcbdff600e8acb.js"
+  "/TokenizationLabFixedSupply/precache-manifest.c53626d3e62800304e25e243846ebab8.js"
 );
 
 self.addEventListener('message', (event) => {
