@@ -1,5 +1,4 @@
 # TokenizationLabFixedSupply
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/matheusrosendo/TokenizationLabFixedSupply)
 ![Licence](https://img.shields.io/github/license/matheusrosendo/TokenizationLabFixedSupply)
 
 ## Screenshots
