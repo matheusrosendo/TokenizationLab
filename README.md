@@ -1,4 +1,4 @@
-# TokenizationLab
+# TokenizationLabFixedSupply
 
 Blockchain Dapp Prototype - Tokenization Lab - Third Lab of the course https://www.udemy.com/course/blockchain-developer/
 
@@ -10,7 +10,7 @@ Requirements: Infura project creation (https://infura.io), ganache instalation, 
 
 Prerequisites:
 > Clone this repository: git clone
-> Install dependencies going to main folder of the project using powersheel and typing: npm install
+> Install dependencies going to main folder of the project using powershell and typing: npm install
 > do the same in the client folder: npm install
 
 Create an .env file with the following variables:
