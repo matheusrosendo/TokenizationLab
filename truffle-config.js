@@ -20,19 +20,19 @@ module.exports = {
     },
     ganache: {
       provider: function() {
-        return new HDWalletProvider(process.env.MNEMONIC, "http://127.0.0.1:7545", AccountIndex)
+        return new HDWalletProvider(process.env.MNEMONIC_LOCALDEV_ACCOUNT, "http://127.0.0.1:7545", AccountIndex)
       },
       network_id: "1337"
     },
     goerli_infura: {
       provider: function() {
-        return new HDWalletProvider(process.env.MNEMONIC, process.env.INFURA_GOERLI_URL, AccountIndex)
+        return new HDWalletProvider(process.env.MNEMONIC_TESTNET_ACCOUNT, process.env.INFURA_GOERLI_URL, AccountIndex)
       },
       network_id: "5"
     },
     ropsten_infura: {
       provider: function() {
-        return new HDWalletProvider(process.env.MNEMONIC, process.env.INFURA_ROPSTEN_URL, AccountIndex)
+        return new HDWalletProvider(process.env.MNEMONIC_TESTNET_ACCOUNT, process.env.INFURA_ROPSTEN_URL, AccountIndex)
       },
       network_id: "3"
     }
@@ -44,6 +44,6 @@ module.exports = {
   }, 
   mocha: {
       enableTimeouts: false,
-      before_timeout: 2400000 // Here is 40min but can be whatever timeout is suitable for you.
+      before_timeout: 240000 // Here is 4min but can be whatever timeout is suitable for you.
   }
 };

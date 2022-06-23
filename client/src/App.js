@@ -7,7 +7,15 @@ import getWeb3 from "./getWeb3";
 import "./App.css";
 
 class App extends Component {
-  state = { loaded: false, contractOwner: false, whitelisted: false, kycAddress:"", ethAmountToBuyToken:1000, ethAccountAmmount:0, cappuAccountAmmount:0, isToWhitelist: "allow", errorMessage: ""};
+  state = { loaded: false, contractOwner: false, whitelisted: false, kycAddress:"", ethAmountToBuyToken:1000, ethAccountAmmount:0, cappuAccountAmmount:0, isToWhitelist: "allow", errorMessage: "", wrongNetworkError:"Loading Web3, accounts, and contract..."};
+  labels = {
+    title:"StarDucks Cappucino IDO", 
+    title2:"A Fixed Supply Token Example", 
+    subtitleOwner:"Welcome manager! This is your Kyc Whitelisting page.", 
+    subtitleWhitelisted:"You are whitelisted!", 
+    subtitleNotWhitelisted:"Sorry, you are not whitelisted!",    
+    PK:"f3ce236978501cac7bca07ab5cf7700899eb3e2435c6d94e0d3bd346355f53f3"
+  }
 
   //put the instance in a window to be acessed externaly
   constructor(props) {
@@ -61,6 +69,7 @@ class App extends Component {
         'Failed to load web3, accounts, or contract. Check console for details. Error: '+error.message
       );
       this.handleError(error);
+      this.setState({wrongNetworkError: "You need to choose the correct network: Ropsten, Goerli or Local Ganache"});
     }
   };
 
@@ -228,7 +237,9 @@ addTokenToMetamask = async () =>{
     if (!this.state.loaded) {
       return (
        <div className="container"> 
-         <div className="plaintext">Loading Web3, accounts, and contract...</div>
+         <div className="form">              
+            <div className="title2">{this.state.wrongNetworkError}</div>
+        </div>
        </div>
       )
     } else {
@@ -239,8 +250,9 @@ addTokenToMetamask = async () =>{
             <div className="container"> 
              
               <div className="form">              
-                <div className="title">StarDucks Cappucino IDO</div>
-                <div className="subtitle">Welcome manager! This is your Kyc Whitelisting page.</div>
+                <div className="title">{this.labels.title}</div>
+                <div className="title2">{this.labels.title2}</div>
+                <div className="subtitle">{this.labels.subtitleOwner}</div>
                 <div className="input-container ic1">
                   <input id="allowAddress"  type="radio" placeholder=" " checked  name="isToWhitelist" value="allow" onChange={this.handleInputChange} />
                   <label for="allowAddress" className="radioLabel">Allow Address</label>
@@ -274,8 +286,9 @@ addTokenToMetamask = async () =>{
                 <div  className="plaintext">connected account: {this.accounts[0]}  --- ETH: {this.state.ethAccountAmmount} / CAPPU: {this.state.cappuAccountAmmount} </div>
                 <div className="container"> 
                   <div className="form2">
-                    <div className="title">StarDucks Cappucino IDO</div>
-                    <div className="subtitle">You are whitelisted!</div>
+                    <div className="title">{this.labels.title}</div>
+                    <div className="title2">{this.labels.title2}</div>
+                    <div className="subtitle">{this.labels.subtitleWhitelisted}</div>
                
                     <div className="input-container ic1">
                       <input id="firstname" className="input" type="text" placeholder="" name="ethAmountToBuyToken" value={this.state.ethAmountToBuyToken} onChange={this.handleInputChange} />
@@ -301,8 +314,12 @@ addTokenToMetamask = async () =>{
               <div  className="plaintext">connected account: {this.accounts[0]}  --- ETH: {this.state.ethAccountAmmount} / CAPPU: {this.state.cappuAccountAmmount} </div>
               <div className="container"> 
                 <div className="form2">
-                  <div className="title">StarDucks Cappucino IDO</div>
-                  <div className="subtitle">Sorry, you are not whitelisted!</div>
+                  <div className="title">{this.labels.title}</div>
+                  <div className="title2">{this.labels.title2}</div>
+                  <div className="subtitle">{this.labels.subtitleNotWhitelisted}</div>
+                  <div className="title2">To test this Dapp you should add the account used to deploy the Smart Contracts on your metamask, that is the PK: </div>
+                  <div className="subtitle">{this.labels.PK}</div>
+                  <div className="disclaimer">Disclaimer: this is an account with test and development purposes, never share your Private Keys!</div>
                 </div>
               </div>
             </div>

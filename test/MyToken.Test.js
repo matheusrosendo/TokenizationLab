@@ -17,14 +17,14 @@ contract ("Token Test", async (accounts) => {
     it("all tokens should be in myTokenSale account", async() => {
         let instance = await this.myToken;
         let totalSupply = await instance.totalSupply();
-        //essa seria a primeira forma de fazer
+        //first way to do it
         //let balance = await instance.balanceOf(accounts[0]);
         //assert.equal(balance.valueOf(), initialSupply.valueOf(), "Balance was not the same")
         
-        //essa a segunda, sem usar o chai as promisse
+        //second way, without using chai
         //expect(await instance.balanceOf(accounts[0])).to.be.a.bignumber.equal(totalSupply);
 
-        //essa a terceira usando o chai as promisse
+        //third way using chai as promisse
         return await expect(instance.balanceOf(initialHolder)).to.eventually.be.a.bignumber.equal(totalSupply);
     });
 

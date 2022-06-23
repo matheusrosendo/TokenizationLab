@@ -9,7 +9,6 @@ code {
   background-color: #15172b;
   border-radius: 20px;
   box-sizing: border-box;
-  height: 520px;
   padding: 20px;
   width: 500px;
 }
@@ -18,17 +17,29 @@ code {
   background-color: #15172b;
   border-radius: 20px;
   box-sizing: border-box;
-  height: 420px;
   padding: 20px;
-  width: 500px;
+  width: 530px;
 }
 
 .title {
-  color: #eee;
+  color: rgb(180, 150, 150);
   font-family: Montserrat-Regular;
   font-size: 25px;
   font-weight: 600;
-  margin-top: 30px;
+  margin-top: 15px;
+}
+
+.title2 {
+  color: rgb(180, 150, 150);
+  font-family: Montserrat-Regular;
+  font-size: 18px;
+}
+
+
+.disclaimer {
+  color: rgb(211, 193, 104);
+  font-family: Montserrat-Regular;
+  font-size: 15px;
 }
 
 .subtitle {
