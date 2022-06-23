@@ -2,6 +2,10 @@
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/matheusrosendo/TokenizationLabFixedSupply)
 ![Licence](https://img.shields.io/github/license/matheusrosendo/TokenizationLabFixedSupply)
 
+## Screenshots
+![alt text](https://github.com/matheusrosendo/TokenizationLabFixedSupply/blob/main/client/public/cappu_kyc.png)
+![alt text](https://github.com/matheusrosendo/TokenizationLabFixedSupply/blob/main/client/public/cappu_buy.png)
+
 ## Live testnet 
 https://matheusrosendo.github.io/TokenizationLabFixedSupply
 
