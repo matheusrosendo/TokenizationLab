@@ -69,7 +69,7 @@ class App extends Component {
      
     } catch (error) {
       this.handleError(error);
-      this.setState({wrongNetworkError: "You need to connect your metamask wallet and choose the correct network: Ropsten, Goerli or Local Ganache"});
+      this.setState({wrongNetworkError: "You need to connect your metamask wallet and choose the correct network: Ropsten Testnet or Local Ganache"});
     }
   };
 

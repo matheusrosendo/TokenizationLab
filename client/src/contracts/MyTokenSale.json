@@ -9429,7 +9429,7 @@
         2151
       ],
       "MyTokenSale": [
-        2238
+        2247
       ],
       "Ownable": [
         104
@@ -9444,12 +9444,12 @@
         1686
       ]
     },
-    "id": 2239,
+    "id": 2248,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2175,
+        "id": 2184,
         "literals": [
           "solidity",
           "^",
@@ -9462,10 +9462,10 @@
       {
         "absolutePath": "project:/contracts/MyCrowdSale.sol",
         "file": "./MyCrowdSale.sol",
-        "id": 2176,
+        "id": 2185,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2239,
+        "scope": 2248,
         "sourceUnit": 2152,
         "src": "59:27:13",
         "symbolAliases": [],
@@ -9474,10 +9474,10 @@
       {
         "absolutePath": "project:/contracts/KycContract.sol",
         "file": "./KycContract.sol",
-        "id": 2177,
+        "id": 2186,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2239,
+        "scope": 2248,
         "sourceUnit": 1797,
         "src": "88:27:13",
         "symbolAliases": [],
@@ -9488,13 +9488,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 2178,
+              "id": 2187,
               "name": "MyCrowdSale",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 2151,
               "src": "145:11:13"
             },
-            "id": 2179,
+            "id": 2188,
             "nodeType": "InheritanceSpecifier",
             "src": "145:11:13"
           }
@@ -9503,9 +9503,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 2238,
+        "id": 2247,
         "linearizedBaseContracts": [
-          2238,
+          2247,
           2151,
           144,
           1374
@@ -9516,12 +9516,12 @@
         "nodes": [
           {
             "constant": false,
-            "id": 2182,
+            "id": 2191,
             "mutability": "mutable",
             "name": "kyc",
             "nameLocation": "176:3:13",
             "nodeType": "VariableDeclaration",
-            "scope": 2238,
+            "scope": 2247,
             "src": "164:15:13",
             "stateVariable": true,
             "storageLocation": "default",
@@ -9530,10 +9530,10 @@
               "typeString": "contract KycContract"
             },
             "typeName": {
-              "id": 2181,
+              "id": 2190,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 2180,
+                "id": 2189,
                 "name": "KycContract",
                 "nodeType": "IdentifierPath",
                 "referencedDeclaration": 1796,
@@ -9551,12 +9551,12 @@
           {
             "constant": false,
             "functionSelector": "8da5cb5b",
-            "id": 2184,
+            "id": 2193,
             "mutability": "mutable",
             "name": "owner",
             "nameLocation": "201:5:13",
             "nodeType": "VariableDeclaration",
-            "scope": 2238,
+            "scope": 2247,
             "src": "186:20:13",
             "stateVariable": true,
             "storageLocation": "default",
@@ -9565,7 +9565,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 2183,
+              "id": 2192,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "186:7:13",
@@ -9579,23 +9579,23 @@
           },
           {
             "body": {
-              "id": 2211,
+              "id": 2220,
               "nodeType": "Block",
               "src": "396:58:13",
               "statements": [
                 {
                   "expression": {
-                    "id": 2204,
+                    "id": 2213,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 2202,
+                      "id": 2211,
                       "name": "kyc",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2182,
+                      "referencedDeclaration": 2191,
                       "src": "407:3:13",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_KycContract_$1796",
@@ -9605,11 +9605,11 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 2203,
+                      "id": 2212,
                       "name": "_kyc",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2194,
+                      "referencedDeclaration": 2203,
                       "src": "413:4:13",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_KycContract_$1796",
@@ -9622,23 +9622,23 @@
                       "typeString": "contract KycContract"
                     }
                   },
-                  "id": 2205,
+                  "id": 2214,
                   "nodeType": "ExpressionStatement",
                   "src": "407:10:13"
                 },
                 {
                   "expression": {
-                    "id": 2209,
+                    "id": 2218,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 2206,
+                      "id": 2215,
                       "name": "owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2184,
+                      "referencedDeclaration": 2193,
                       "src": "428:5:13",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -9649,7 +9649,7 @@
                     "operator": "=",
                     "rightHandSide": {
                       "expression": {
-                        "id": 2207,
+                        "id": 2216,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -9660,7 +9660,7 @@
                           "typeString": "msg"
                         }
                       },
-                      "id": 2208,
+                      "id": 2217,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -9679,24 +9679,24 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 2210,
+                  "id": 2219,
                   "nodeType": "ExpressionStatement",
                   "src": "428:18:13"
                 }
               ]
             },
-            "id": 2212,
+            "id": 2221,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 2197,
+                    "id": 2206,
                     "name": "rate",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2186,
+                    "referencedDeclaration": 2195,
                     "src": "375:4:13",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -9704,11 +9704,11 @@
                     }
                   },
                   {
-                    "id": 2198,
+                    "id": 2207,
                     "name": "wallet",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2188,
+                    "referencedDeclaration": 2197,
                     "src": "381:6:13",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -9716,11 +9716,11 @@
                     }
                   },
                   {
-                    "id": 2199,
+                    "id": 2208,
                     "name": "token",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2191,
+                    "referencedDeclaration": 2200,
                     "src": "389:5:13",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_IERC20_$808",
@@ -9728,10 +9728,10 @@
                     }
                   }
                 ],
-                "id": 2200,
+                "id": 2209,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 2196,
+                  "id": 2205,
                   "name": "MyCrowdSale",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 2151,
@@ -9745,17 +9745,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2195,
+              "id": 2204,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2186,
+                  "id": 2195,
                   "mutability": "mutable",
                   "name": "rate",
                   "nameLocation": "245:4:13",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2212,
+                  "scope": 2221,
                   "src": "237:12:13",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9764,7 +9764,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2185,
+                    "id": 2194,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "237:7:13",
@@ -9777,12 +9777,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 2188,
+                  "id": 2197,
                   "mutability": "mutable",
                   "name": "wallet",
                   "nameLocation": "298:6:13",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2212,
+                  "scope": 2221,
                   "src": "282:22:13",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9791,7 +9791,7 @@
                     "typeString": "address payable"
                   },
                   "typeName": {
-                    "id": 2187,
+                    "id": 2196,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "282:15:13",
@@ -9805,12 +9805,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 2191,
+                  "id": 2200,
                   "mutability": "mutable",
                   "name": "token",
                   "nameLocation": "322:5:13",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2212,
+                  "scope": 2221,
                   "src": "315:12:13",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9819,10 +9819,10 @@
                     "typeString": "contract IERC20"
                   },
                   "typeName": {
-                    "id": 2190,
+                    "id": 2199,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 2189,
+                      "id": 2198,
                       "name": "IERC20",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 808,
@@ -9839,12 +9839,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 2194,
+                  "id": 2203,
                   "mutability": "mutable",
                   "name": "_kyc",
                   "nameLocation": "350:4:13",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2212,
+                  "scope": 2221,
                   "src": "338:16:13",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9853,10 +9853,10 @@
                     "typeString": "contract KycContract"
                   },
                   "typeName": {
-                    "id": 2193,
+                    "id": 2202,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 2192,
+                      "id": 2201,
                       "name": "KycContract",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 1796,
@@ -9875,12 +9875,12 @@
               "src": "226:135:13"
             },
             "returnParameters": {
-              "id": 2201,
+              "id": 2210,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "396:0:13"
             },
-            "scope": 2238,
+            "scope": 2247,
             "src": "215:239:13",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -9891,7 +9891,7 @@
               2068
             ],
             "body": {
-              "id": 2236,
+              "id": 2245,
               "nodeType": "Block",
               "src": "557:157:13",
               "statements": [
@@ -9899,11 +9899,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 2223,
+                        "id": 2232,
                         "name": "_beneficiary",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2214,
+                        "referencedDeclaration": 2223,
                         "src": "595:12:13",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -9911,11 +9911,11 @@
                         }
                       },
                       {
-                        "id": 2224,
+                        "id": 2233,
                         "name": "_weiAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2216,
+                        "referencedDeclaration": 2225,
                         "src": "609:10:13",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -9935,18 +9935,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 2220,
+                        "id": 2229,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 4294967271,
                         "src": "568:5:13",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_super$_MyTokenSale_$2238_$",
+                          "typeIdentifier": "t_type$_t_super$_MyTokenSale_$2247_$",
                           "typeString": "type(contract super MyTokenSale)"
                         }
                       },
-                      "id": 2222,
+                      "id": 2231,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -9960,7 +9960,7 @@
                         "typeString": "function (address,uint256) view"
                       }
                     },
-                    "id": 2225,
+                    "id": 2234,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9975,7 +9975,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2226,
+                  "id": 2235,
                   "nodeType": "ExpressionStatement",
                   "src": "568:52:13"
                 },
@@ -9986,7 +9986,7 @@
                         "arguments": [
                           {
                             "expression": {
-                              "id": 2230,
+                              "id": 2239,
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -9997,7 +9997,7 @@
                                 "typeString": "msg"
                               }
                             },
-                            "id": 2231,
+                            "id": 2240,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -10019,18 +10019,18 @@
                             }
                           ],
                           "expression": {
-                            "id": 2228,
+                            "id": 2237,
                             "name": "kyc",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2182,
+                            "referencedDeclaration": 2191,
                             "src": "648:3:13",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_KycContract_$1796",
                               "typeString": "contract KycContract"
                             }
                           },
-                          "id": 2229,
+                          "id": 2238,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -10044,7 +10044,7 @@
                             "typeString": "function (address) view external returns (bool)"
                           }
                         },
-                        "id": 2232,
+                        "id": 2241,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -10061,7 +10061,7 @@
                       },
                       {
                         "hexValue": "4e6f7420696e207468652077686974656c69737421",
-                        "id": 2233,
+                        "id": 2242,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -10087,7 +10087,7 @@
                           "typeString": "literal_string \"Not in the whitelist!\""
                         }
                       ],
-                      "id": 2227,
+                      "id": 2236,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -10101,7 +10101,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 2234,
+                    "id": 2243,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -10116,13 +10116,13 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2235,
+                  "id": 2244,
                   "nodeType": "ExpressionStatement",
                   "src": "640:64:13"
                 }
               ]
             },
-            "id": 2237,
+            "id": 2246,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -10130,23 +10130,23 @@
             "nameLocation": "471:20:13",
             "nodeType": "FunctionDefinition",
             "overrides": {
-              "id": 2218,
+              "id": 2227,
               "nodeType": "OverrideSpecifier",
               "overrides": [],
               "src": "548:8:13"
             },
             "parameters": {
-              "id": 2217,
+              "id": 2226,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2214,
+                  "id": 2223,
                   "mutability": "mutable",
                   "name": "_beneficiary",
                   "nameLocation": "500:12:13",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2237,
+                  "scope": 2246,
                   "src": "492:20:13",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -10155,7 +10155,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2213,
+                    "id": 2222,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "492:7:13",
@@ -10169,12 +10169,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 2216,
+                  "id": 2225,
                   "mutability": "mutable",
                   "name": "_weiAmount",
                   "nameLocation": "522:10:13",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2237,
+                  "scope": 2246,
                   "src": "514:18:13",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -10183,7 +10183,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2215,
+                    "id": 2224,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "514:7:13",
@@ -10198,19 +10198,19 @@
               "src": "491:42:13"
             },
             "returnParameters": {
-              "id": 2219,
+              "id": 2228,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "557:0:13"
             },
-            "scope": 2238,
+            "scope": 2247,
             "src": "462:252:13",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 2239,
+        "scope": 2248,
         "src": "121:602:13",
         "usedErrors": []
       }
@@ -10225,8 +10225,8 @@
     "3": {
       "events": {},
       "links": {},
-      "address": "0x5D7C4F32Ee6CBa5138ce1754739945892B297ed3",
-      "transactionHash": "0x462d64c78f197dd61c75290362382b16444d31e7917fcc5a9d2894ebde112f8f"
+      "address": "0x22314336d2c2f33407c3c67709db5c044DB0C303",
+      "transactionHash": "0x38af9c78011b51b1344825019b8c6225147148b2ede53a954d6f52740e817c08"
     },
     "5": {
       "events": {},
@@ -10237,8 +10237,8 @@
     "1337": {
       "events": {},
       "links": {},
-      "address": "0x79e962391F71126b7a4860f4b2c3794D6D99f426",
-      "transactionHash": "0xcb9c978cc21c723d3a1e0ff87413eea0c9f7f40ebd30c8710c1ccce87b623dd2"
+      "address": "0x640CE2D1efBd544eeD2Ee6EFD5baFdcbE6B7C314",
+      "transactionHash": "0x653a25c4acde438e0d554bcbd744d68de543e7fb8cd7066980b9791b16c116e2"
     },
     "5777": {
       "events": {},
@@ -10248,7 +10248,7 @@
     }
   },
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-06-23T19:24:11.511Z",
+  "updatedAt": "2022-06-23T20:10:47.221Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
