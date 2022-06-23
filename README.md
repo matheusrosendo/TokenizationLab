@@ -4,7 +4,7 @@ Blockchain Dapp Prototype - Tokenization Lab - Third Lab of the course https://w
 
 Description: A Token creation and sale dapp with fixed supply and whitelist approval by the deployer
 
-Live testnet: https://matheusrosendo.github.io/TokenizationLab
+Live testnet: https://matheusrosendo.github.io/TokenizationLabFixedSupply
 
 Requirements: Infura project creation (https://infura.io), ganache instalation, node package manager installation
 
