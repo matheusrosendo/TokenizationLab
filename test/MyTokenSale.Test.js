@@ -40,27 +40,11 @@ contract ("TokenSale Test", async (accounts) => {
         let tokenInstance = await MyToken.deployed();
         let tokenSaleInstance = await MyTokenSale.deployed();
         let balanceBefore = await tokenInstance.balanceOf(deployerAccount);
-        
-        /* let deployerAccountInitialBalance = await web3.eth.getBalance(deployerAccount);
-        console.log("deployerAccountInitialBalance = "+deployerAccountInitialBalance.toString());
-        let initialBalancoDeployerAccount = await tokenInstance.balanceOf(deployerAccount);
-        console.log("initialbalacoCappuDeployerAccount= "+ initialBalancoDeployerAccount.toString());
-        let initialBalancoTokenSaleAddress = await tokenInstance.balanceOf(tokenSaleInstance.address);
-        console.log("initialbalacoCappuTokenSalaAdress= "+ initialBalancoTokenSaleAddress.toString());
-         */
 
-        console.log("deployerAccount "+deployerAccount);
-        //não funcionou sem o await, tive que inserir por conta
-        await expect(tokenSaleInstance.sendTransaction({from: deployerAccount, value: web3.utils.toWei("1", "wei")})).to.be.fulfilled;
+        //does not work without await...
+        await expect(tokenSaleInstance.sendTransaction({from: deployerAccount, value: web3.utils.toWei(weiSent, "wei")})).to.be.fulfilled;
        
-       /*  let deployerAccountAfterBalance = await web3.eth.getBalance(deployerAccount);
-        console.log("deployerAccountAfterBalance   = "+deployerAccountAfterBalance.toString());
-        let novoBalancoDeployerAccount = await tokenInstance.balanceOf(deployerAccount);
-        console.log("novobalacoCappuDeployerAccount= "+ novoBalancoDeployerAccount.toString());
-        let novoBalancoTokenSaleAddress = await tokenInstance.balanceOf(tokenSaleInstance.address);
-        console.log("novobalacoCappuTokenSalaAdress= "+ novoBalancoTokenSaleAddress.toString()); */
-
-        return expect(tokenInstance.balanceOf(deployerAccount)).to.eventually.be.bignumber.equal(balanceBefore.add(new BigNumber(1)));
+        return expect(tokenInstance.balanceOf(deployerAccount)).to.eventually.be.bignumber.equal(balanceBefore.add(tokenReceived));
     })
 
     it("should be possible to buy tokens (my version)", async() => {
@@ -72,6 +56,7 @@ contract ("TokenSale Test", async (accounts) => {
         let instance = await MyToken.deployed();
         let instanceTokenSale = await MyTokenSale.deployed();
         let initialTokenBalance = await instance.balanceOf(instanceTokenSale.address);
+        //increased gas limit to avoid 'out of gas' problem
         await web3.eth.sendTransaction({from: anotherAccount, to: instanceTokenSale.address, value: weiAmountToSend, gas: 1000000 }, async function(error, result) {
             if(result){
                 expect(instance.balanceOf(anotherAccount)).to.eventually.be.a.bignumber.equal(tokenAmountSent);
