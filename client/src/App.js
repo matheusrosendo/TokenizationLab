@@ -3,18 +3,21 @@ import MyToken from "./contracts/MyToken.json";
 import MyTokenSale from "./contracts/MyTokenSale.json";
 import KycContract from "./contracts/KycContract.json";
 import getWeb3 from "./getWeb3";
+import loading from './loading.gif';
+import tokenLogo from './cappu.png';
 
 import "./App.css";
 
 class App extends Component {
-  state = { loaded: false, contractOwner: false, whitelisted: false, kycAddress:"", ethAmountToBuyToken:1000, ethAccountAmmount:0, cappuAccountAmmount:0, isToWhitelist: "allow", errorMessage: "",  cappuTotalSupply: 0, wrongNetworkError:"Loading Web3, accounts, and contract..."};
+  state = { loaded: false, contractOwner: false, whitelisted: false, kycAddress:"", ethAmountToBuyToken:1000, ethAccountAmmount:0, cappuAccountAmmount:0, isToWhitelist: "allow", errorMessage: "",  cappuTotalSupply: 0, wrongNetworkError:""};
   labels = {
     title:"StarDucks Cappucino IDO", 
     title2:"A Fixed Supply Token Example", 
     subtitleOwner:"Welcome manager! This is your Kyc Whitelisting page.", 
     subtitleWhitelisted:"You are whitelisted!", 
     subtitleNotWhitelisted:"Sorry, you are not whitelisted!",    
-    PK:"f3ce236978501cac7bca07ab5cf7700899eb3e2435c6d94e0d3bd346355f53f3"
+    PK:"f3ce236978501cac7bca07ab5cf7700899eb3e2435c6d94e0d3bd346355f53f3",
+    loading:"Loading Web3, accounts, and contract..."
   }
 
   //put the instance in a window to be acessed externaly
@@ -194,7 +197,7 @@ addTokenToMetamask = async () =>{
             address: this.instanceMyToken._address,
             symbol: symbol,
             decimals: decimals,
-            image: 'https://www.cafefacil.com.br/media/product/383/capsula-nescafe-dolce-gusto-cappuccino-16-capsulas-nestle-020.jpg'
+            image: tokenLogo
           }
         }
       });
@@ -233,13 +236,19 @@ addTokenToMetamask = async () =>{
   render() {
    
     if (!this.state.loaded) {
-      return (
-       <div className="container"> 
-         <div className="form">              
-            <div className="title2">{this.state.wrongNetworkError}</div>
+      if(this.state.wrongNetworkError ===""){ 
+        return (      
+          <div className="title2">{this.labels.loading}<br/><img className="loading" src={loading} alt="Logo" /></div>
+        )
+      } else {
+        return (
+        <div className="container"> 
+          <div className="form">              
+              <div className="title2">{this.state.wrongNetworkError}</div>
+          </div>
         </div>
-       </div>
-      )
+        )
+      }
     } else {
       if(this.state.contractOwner){
         return (
