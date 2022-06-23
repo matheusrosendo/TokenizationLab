@@ -7,7 +7,7 @@ import getWeb3 from "./getWeb3";
 import "./App.css";
 
 class App extends Component {
-  state = { loaded: false, contractOwner: false, whitelisted: false, kycAddress:"", ethAmountToBuyToken:1000, ethAccountAmmount:0, cappuAccountAmmount:0, isToWhitelist: "allow", errorMessage: "", wrongNetworkError:"Loading Web3, accounts, and contract..."};
+  state = { loaded: false, contractOwner: false, whitelisted: false, kycAddress:"", ethAmountToBuyToken:1000, ethAccountAmmount:0, cappuAccountAmmount:0, isToWhitelist: "allow", errorMessage: "",  cappuTotalSupply: 0, wrongNetworkError:"Loading Web3, accounts, and contract..."};
   labels = {
     title:"StarDucks Cappucino IDO", 
     title2:"A Fixed Supply Token Example", 
@@ -218,10 +218,11 @@ addTokenToMetamask = async () =>{
   let inCappuAccountAmmount = await this.instanceMyToken.methods.balanceOf(this.accounts[0]).call();
   let inEthAccountAmmount = this.web3.utils.fromWei(await this.web3.eth.getBalance(this.accounts[0]), 'ether'); 
   let inEthAccountAmmountInString = "0.0";
+  let inCappuTotalSupply = await this.instanceMyToken.methods.totalSupply().call();
   if(inEthAccountAmmount > 0) {
     inEthAccountAmmountInString = inEthAccountAmmount.substring(0,5);
   }
-  this.setState({ ethAccountAmmount:inEthAccountAmmountInString, cappuAccountAmmount: inCappuAccountAmmount});
+  this.setState({ ethAccountAmmount:inEthAccountAmmountInString, cappuAccountAmmount: inCappuAccountAmmount, cappuTotalSupply: inCappuTotalSupply});
  }
 
  /**
@@ -253,6 +254,7 @@ addTokenToMetamask = async () =>{
                 <div className="title">{this.labels.title}</div>
                 <div className="title2">{this.labels.title2}</div>
                 <div className="subtitle">{this.labels.subtitleOwner}</div>
+                <div className="subtitle">Total Supply: {this.state.cappuTotalSupply}</div>
                 <div className="input-container ic1">
                   <input id="allowAddress"  type="radio" placeholder=" " checked  name="isToWhitelist" value="allow" onChange={this.handleInputChange} />
                   <label for="allowAddress" className="radioLabel">Allow Address</label>
@@ -289,7 +291,7 @@ addTokenToMetamask = async () =>{
                     <div className="title">{this.labels.title}</div>
                     <div className="title2">{this.labels.title2}</div>
                     <div className="subtitle">{this.labels.subtitleWhitelisted}</div>
-               
+                    <div className="subtitle">Total Supply: {this.state.cappuTotalSupply}</div>
                     <div className="input-container ic1">
                       <input id="firstname" className="input" type="text" placeholder="" name="ethAmountToBuyToken" value={this.state.ethAmountToBuyToken} onChange={this.handleInputChange} />
                       <div className="cut"></div>
