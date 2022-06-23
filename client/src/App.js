@@ -65,11 +65,8 @@ class App extends Component {
       this.setState({ loaded: true, contractOwner: owner===this.accounts[0], whitelisted: this.isWhitelisted, whitelistAddress: true, errorMessage:"" });
      
     } catch (error) {
-      alert(
-        'Failed to load web3, accounts, or contract. Check console for details. Error: '+error.message
-      );
       this.handleError(error);
-      this.setState({wrongNetworkError: "You need to choose the correct network: Ropsten, Goerli or Local Ganache"});
+      this.setState({wrongNetworkError: "You need to connect your metamask wallet and choose the correct network: Ropsten, Goerli or Local Ganache"});
     }
   };
 
