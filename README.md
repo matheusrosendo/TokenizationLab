@@ -1,5 +1,6 @@
 # TokenizationLabFixedSupply
 ![Licence](https://img.shields.io/github/license/matheusrosendo/TokenizationLabFixedSupply)
+> :warning: **Disclaimer**: That project is for educational purposes only, it was not tested enough for production!
 
 ## Screenshots
 ![alt text](https://github.com/matheusrosendo/TokenizationLabFixedSupply/blob/main/client/public/cappu_kyc.png)
@@ -20,11 +21,10 @@ A Token creation and sale dapp with fixed supply and whitelist approval by the d
 * Install Node Package Manager
 
 ## Prerequisites
-* Clone this repository: git clone  
-* Install dependencies going to main folder of the project using powershell and typing: npm install  
-* Do the same in the client folder: npm install  
+* Clone this repository: `git clone`  
+* Install dependencies going to main folder of the project using powershell and typing: `npm install`  
+* Do the same in the client folder: `npm install`  
 * Create an .env file with the following variables:  
- 
 > INITIAL_TOKENS=1000000000  
 > RATE_TO_WEI=1  
 > MNEMONIC_LOCALDEV_ACCOUNT=your mnemonic phrase (take from the first account (show keys) of your ganache instance)  
@@ -35,18 +35,18 @@ A Token creation and sale dapp with fixed supply and whitelist approval by the d
 
 ## How to deploy and run on ganache
 * start ganache.  
-* run truffle tests: truffle test --network ganache  
-* migrate smart contracts to Ganache: truffle migrate --reset --network ganache  
-* in client folder: npm start  
+* in main folder run truffle tests: `truffle test --network ganache`  
+* migrate smart contracts to Ganache: `truffle migrate --reset --network ganache`  
+* in client folder: `npm start`  
 * add your local ganache network on metamask and connect to it  
 * change account on metamask to your deploy account (mnemonic informed on .env)  
 * refresh page (default is localhost:3000)  
 
 ## How to deploy and run on testnet ropsten using infura
 * create a project in Infura, copy address of ropsten and goerli urls and paste it on .env file  
-* run truffle tests: truffle test --network ropsten_infura  
-* migrate smart contracts to Ropsten testnet: truffle migrate --reset --network ropsten_infura  
-* in client folder: npm start   
+* in main folder run truffle tests: `truffle test --network ropsten_infura`  
+* migrate smart contracts to Ropsten testnet: `truffle migrate --reset --network ropsten_infura`  
+* in client folder: `npm start`   
 * change metamask network to Ropsten and connect to it   
 * change account on metamask to your deploy account (mnemonic informed on .env)  
 
