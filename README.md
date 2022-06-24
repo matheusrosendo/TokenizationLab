@@ -7,8 +7,7 @@
 ![alt text](https://github.com/matheusrosendo/TokenizationLabFixedSupply/blob/main/client/public/cappu_buy.png)
 
 ## Live testnet 
-* Import an account using this PK in your metamask:
-* * f3ce236978501cac7bca07ab5cf7700899eb3e2435c6d94e0d3bd346355f53f3
+* Import an account using this PK in your metamask: f3ce236978501cac7bca07ab5cf7700899eb3e2435c6d94e0d3bd346355f53f3
 * Connect to Goerli testnet
 * Access https://matheusrosendo.github.io/TokenizationLabFixedSupply
 
